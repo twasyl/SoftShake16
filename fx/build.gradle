@@ -1,0 +1,17 @@
+dependencies {
+    compile project(':core')
+}
+
+jar {
+    manifest {
+        attributes(
+                'Manifest-Version': '1.0',
+                'Implementation-Title': 'DemoFX',
+                'Implementation-Version': '1.0',
+                'Implementation-Vendor': 'Thierry Wasylczenko',
+                'JavaFX-Version': '9.0+',
+                'JavaFX-Application-Class': 'io.twasyl.demo.fx.DemoFXApp',
+                'Main-Class': 'io.twasyl.demo.fx.DemoFXApp'
+        )
+    }
+}

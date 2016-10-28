@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Implementation-Title: DemoFX
+Implementation-Version: 1.0
+Implementation-Vendor: Thierry Wasylczenko
+JavaFX-Version: 9.0+
+JavaFX-Application-Class: io.twasyl.demo.fx.DemoFXApp

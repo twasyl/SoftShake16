@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="io.twasyl.demo.fx.controllers.DemoFXController"
+            prefWidth="500">
+
+    <!--<stylesheets>-->
+        <!--<URL value="@../css/default.css" />-->
+    <!--</stylesheets>-->
+
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="Exit" onAction="#exitApplication" />
+            </Menu>
+            <Menu text="?" />
+        </MenuBar>
+    </top>
+
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20" />
+            </padding>
+            <HBox spacing="10">
+                <CheckBox fx:id="allowNumbers" text="Numbers" selected="true" onAction="#allowNumbersAction" />
+                <CheckBox fx:id="allowLowerCaseLetters" text="Lower case letters" selected="true" onAction="#allowLowerCaseLettersAction" />
+                <CheckBox fx:id="allowUpperCaseLetters" text="Upper case letters" selected="true" onAction="#allowUpperCaseLettersAction" />
+            </HBox>
+            <HBox spacing="10" alignment="BASELINE_LEFT">
+                <Label text="Length:" />
+                <TextField fx:id="length" text="10" />
+            </HBox>
+            <HBox spacing="10">
+                <Button text="Generate" onAction="#generatePasswordAction" />
+                <Button text="Copy to clipboard" onAction="#copyGeneratedPasswordToClipboardAction"/>
+                <Button text="Clear" onAction="#clearPasswordAction" />
+            </HBox>
+            <ScrollPane>
+                <Text styleClass="password" fx:id="generatedPasswordText" />
+            </ScrollPane>
+        </VBox>
+    </center>
+</BorderPane>

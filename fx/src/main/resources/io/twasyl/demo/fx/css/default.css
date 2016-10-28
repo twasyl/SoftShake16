@@ -1,0 +1,46 @@
+.root {
+    -fx-background-color: white;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(from 50% 0% to 50% 100%, darkgray 0%, gray 100%);
+    -fx-text-fill: white;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.check-box .box:hover {
+    -fx-border-color: #4078c0;
+}
+
+.check-box:selected:hover .box .mark {
+   -fx-background-color: #4078c0;
+}
+
+.check-box:selected .box .mark {
+   -fx-background-color: black;
+}
+
+.text-field:focused {
+    -fx-border-color: #4078c0;
+    -fx-background-color: white;
+    -fx-background-radius: 3, 2;
+}
+
+.scroll-pane {
+    -fx-background-color: white;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: white;
+}
+
+.password {
+    -fx-font-size: 30px;
+}

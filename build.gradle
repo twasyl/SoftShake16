@@ -1,0 +1,14 @@
+repositories {
+    jcenter()
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.9
+    targetCompatibility = 1.9
+}
+
+wrapper {
+    gradleVersion = '3.1'
+}

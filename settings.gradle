@@ -1,0 +1,5 @@
+rootProject.name = 'Demo'
+
+include 'fx'
+include 'core'
+
