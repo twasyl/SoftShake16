@@ -1,5 +1,7 @@
 #!/bin/sh
 
+mkdir -p build/libs
+
 rm -rf build/modules/*
 rm -rf build/libs/*
 

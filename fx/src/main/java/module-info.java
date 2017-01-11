@@ -13,6 +13,5 @@ module io.twasyl.demo.fx {
     requires io.twasyl.demo.core;
 
     exports io.twasyl.demo.fx;
-    //exports io.twasyl.demo.fx.controllers to javafx.fxml;
-    exports private io.twasyl.demo.fx.controllers to javafx.fxml;
+    opens io.twasyl.demo.fx.controllers to javafx.fxml;
 }
